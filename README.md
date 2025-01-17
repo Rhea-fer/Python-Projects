@@ -1,5 +1,5 @@
-#Uber Trips Analysis Project
-##Introduction
+Uber Trips Analysis Project
+Introduction
 This project analyzes Uber trip data to extract meaningful insights and visualize patterns such as trip frequencies, purposes, distances, and seasonal variations. It demonstrates data preprocessing, feature extraction, and visualization using Python.
 
 ##Dataset Cleaning
