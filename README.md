@@ -32,6 +32,7 @@ New features were derived from the START_DATE column to enable time-based analys
 
 ### Extracting Components:
 Hour, Day, Day of the Week, Month, and Weekday:
+
 ![image](https://github.com/user-attachments/assets/0245806c-3e00-481c-bb10-37c6239ec702)
 
 ## Data Visualization
