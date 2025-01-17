@@ -42,9 +42,15 @@ Relationship between the hour of the trip and the day of the month:
 data.plot(kind='scatter', x='HOUR', y='DAY', s=32, alpha=0.8)
 plt.gca().spines[['top', 'right']].set_visible(False)
 
+![image](https://github.com/user-attachments/assets/81daeb65-960f-4dfa-9ce4-eaaccc332838)
+
+
 ### How long do people travel with Uber?
 A histogram to analyze trip distances:
 data['MILES'].plot.hist()
+
+![image](https://github.com/user-attachments/assets/20fe692c-9ba2-405e-89e3-298ab8af7c72)
+
 
 ### What is the frquency of trips according to hours?
 Frequency of trips during different hours of the day:
@@ -54,9 +60,15 @@ plt.xlabel('Hours')
 plt.ylabel('Frequency')
 plt.title('Number of Trips Vs Hours')
 
+![image](https://github.com/user-attachments/assets/ec3296b2-2877-4d6d-99ee-bd4b03707c54)
+
+
 ### What is the Purpose Of Trips?
 Distribution of trip purposes using a bar chart:
 data['PURPOSE'].value_counts().plot(kind='bar', figsize=(10, 5), color='brown')
+
+![image](https://github.com/user-attachments/assets/bd5b3a25-dd0b-42d0-94bc-d01301a41fda)
+
 
 ### Which Day Has the Highest Number of Trips?
 The pie chart below shows the percentage distribution of Uber trips across different days of the week. 
@@ -67,6 +79,9 @@ plt.title('Percentage of Trips by Day of the Week', fontsize=14)
 plt.ylabel('')  # Remove default ylabel
 plt.show()
 
+![image](https://github.com/user-attachments/assets/933eda75-b56a-4da8-a3ca-f666475fe59c)
+
+
 ### What is Hourly Trip Frequencies by Day of the Week?
 This heatmap visualizes the frequency of Uber trips across different hours of the day (`HOUR`) and days of the week (`DAY_OF_WEEK`). It shows which hours and days have the highest trip frequencies.
 heatmap_data = data.pivot_table(index='DAY_OF_WEEK', columns='HOUR', aggfunc='size', fill_value=0)
@@ -76,10 +91,16 @@ plt.xlabel('Hour of Day')
 plt.ylabel('Days of Week')
 plt.show()
 
+![image](https://github.com/user-attachments/assets/1a06904a-aaf5-4325-875a-fe6a55e76520)
+
+
 ### Where do people start their Trips from?
 The starting points of trips are visualized with a bar chart:
 data['START'].value_counts().plot(kind='bar', figsize=(25, 10), color='blue')
 This shows where Uber riders most frequently start their trips.
+
+![image](https://github.com/user-attachments/assets/08a4234a-6db4-432c-a661-0a8c1c693997)
+
 
 ### What are Trips over a period of time?
 This line plot visualizes the trend of trips over time, showing how the number of trips changes from day to day:
@@ -90,11 +111,17 @@ plt.ylabel('Number of Trips')
 plt.grid(True)
 It helps track how the trip frequency evolves over the entire dataset period.
 
+![image](https://github.com/user-attachments/assets/ab0b471f-3f7c-49f9-94c7-aeb4b53bc262)
+
+
 ### What Are The Trips In The Month?
 This visualization shows the number of trips taken each month using a bar chart:
 data['MONTH'].value_counts().plot(kind='bar', figsize=(10, 5), color='black')
 plt.ylabel('Number of Trips')
 This helps identify trends in trips across different months.
+
+![image](https://github.com/user-attachments/assets/44c94109-19d0-4eb4-ba08-07eb207cb1d7)
+
 
 ### What Is the Seasonal Trend Observed in the Trips?
 This analysis categorizes trips based on seasons (Winter, Spring, Summer, and Rainy) to observe any seasonal variations in Uber activity.
@@ -114,6 +141,9 @@ plt.title('Number of Trips by Season')
 plt.xlabel('Season')
 plt.ylabel('Number of Trips')
 plt.show()
+
+![image](https://github.com/user-attachments/assets/08e343d8-75e0-495a-89b9-4ad042fd3d0e)
+
 
 # Conclusion
 Through this project, we were able to:
